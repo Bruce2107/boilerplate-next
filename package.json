@@ -9,7 +9,7 @@
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "dependencies": {
     "next": "10.0.2",
