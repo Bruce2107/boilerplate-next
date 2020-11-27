@@ -3,8 +3,7 @@ import {{pascalCase name}} from '.'
 
 describe('<{{pascalCase name}} />', () => {
   it('should render the heading', () => {
-    const { getByRole, container } = render(<{{pascalCase name}} />)
+    const { getByRole } = render(<{{pascalCase name}} />)
     expect(getByRole('heading', { name: /{{pascalCase name}}/i })).toBeInTheDocument()
-    expect(container.firstChild).toMatchSnapshot()
   })
 })

@@ -1,6 +1,8 @@
-module.exports = function (plop) {
+import { NodePlopAPI } from 'plop'
+
+export default function (plop: NodePlopAPI) {
   plop.setGenerator('component', {
-    description: 'application component logic',
+    description: 'Gerar componente',
     prompts: [
       {
         type: 'input',
